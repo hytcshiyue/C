@@ -1,0 +1,7 @@
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\bin\Debug\hytc.chat-online.exe
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\bin\Debug\hytc.chat-online.pdb
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\obj\x86\Debug\hytc.chat_online.FrmMain.resources
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\obj\x86\Debug\hytc.chat_online.Properties.Resources.resources
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\obj\x86\Debug\hytc.chat-online.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\obj\x86\Debug\hytc.chat-online.exe
+C:\Users\Student\Desktop\chat\hytc.chat-online\hytc.chat-online\obj\x86\Debug\hytc.chat-online.pdb
