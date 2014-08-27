@@ -6,3 +6,11 @@ C:\Users\Student\Desktop\chat\Feiqiu\Feiqiu\bin\Debug\Feiqiu.exe
 C:\Users\Student\Desktop\chat\Feiqiu\Feiqiu\bin\Debug\Feiqiu.pdb
 C:\Users\Student\Desktop\chat\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.exe
 C:\Users\Student\Desktop\chat\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.pdb
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.exe
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.FrmMain.resources
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.Properties.Resources.resources
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.UcFriend.resources
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\bin\Debug\Feiqiu.exe
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\bin\Debug\Feiqiu.pdb
+C:\Users\Student\Desktop\C\Feiqiu\Feiqiu\obj\x86\Debug\Feiqiu.pdb

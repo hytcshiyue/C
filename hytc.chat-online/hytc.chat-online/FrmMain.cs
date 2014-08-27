@@ -22,11 +22,12 @@ namespace hytc.chat_online
         private void btnSend_Click(object sender, EventArgs e)
         {
             string ip=this.txtIp.Text;
-            UdpClient uc = new UdpClient();
-            string msg = this.txtMsg.Text;
-            byte[] bmsg = Encoding.Default.GetBytes(msg);
-            IPEndPoint ipep=new IPEndPoint(IPAddress.Parse(ip),9527);
-            uc.Send(bmsg,bmsg.Length,ipep);
+            //UdpClient uc = new UdpClient();
+            string msg ="PUBLIC|"+ this.txtMsg.Text+"|shiyue";
+            //byte[] bmsg = Encoding.Default.GetBytes(msg);
+            //IPEndPoint ipep=new IPEndPoint(IPAddress.Parse(ip),9527);
+            //uc.Send(bmsg,bmsg.Length,ipep);
+            SendMsg(ip, msg);
         }
 
         private void listen() {
@@ -35,9 +36,32 @@ namespace hytc.chat_online
             {
                 IPEndPoint ipep = new IPEndPoint(IPAddress.Any, 0);
                 byte[] bmsg = uc.Receive(ref ipep);
-                string msg = Encoding.Default.GetString(bmsg);
-                this.txtHistory.Text += msg + "\r\n";
+                string scontent = Encoding.Default.GetString(bmsg);
+                string[] data = scontent.Split('|');
+                if(data[0]=="INROOM")
+                {
+                    this.txt_person.Text += data[1] + "上线了\r\n";
+                }
+                if(data[0]=="PUBLIC")
+                {
+                    int l = data.Count();
+                    if(l>3)
+                    {
+                        this.txtHistory.Text += data[2] + ":\r\n";
+                        this.txtHistory.Text += data[2] + "\r\n";
+                    }
+                }
+                
             }
+        }
+        private void SendMsg(string ipAll, string msgAll)
+        {
+            UdpClient uc = new UdpClient();
+            IPEndPoint ipep = new IPEndPoint(IPAddress.Parse(ipAll), 9527);
+            string inmsg = msgAll;
+            byte[] binmsg = Encoding.Default.GetBytes(inmsg);
+            uc.Send(binmsg, binmsg.Length, ipep);
+            this.txtMsg .Text = "";
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
@@ -45,6 +69,15 @@ namespace hytc.chat_online
             Thread th = new Thread(new ThreadStart(listen));
             th.IsBackground = false;
             th.Start();
+            SendMsg("255.255.255.255","INROOM|shiyue|192.168.1.91");
+        }
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //SendMsg("255.255.255.255", "OUTROOM|冯莹|192.168.1.123");
+            Application.Exit();
+            //flag = false;
+            //th.Abort();
+
         }
     }
 }

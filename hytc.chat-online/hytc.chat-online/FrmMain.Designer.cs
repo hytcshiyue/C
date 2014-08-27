@@ -32,6 +32,7 @@
             this.txtIp = new System.Windows.Forms.TextBox();
             this.txtMsg = new System.Windows.Forms.TextBox();
             this.txtHistory = new System.Windows.Forms.TextBox();
+            this.txt_person = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSend
@@ -69,11 +70,21 @@
             this.txtHistory.Size = new System.Drawing.Size(364, 126);
             this.txtHistory.TabIndex = 3;
             // 
+            // txt_person
+            // 
+            this.txt_person.Location = new System.Drawing.Point(399, 12);
+            this.txt_person.Multiline = true;
+            this.txt_person.Name = "txt_person";
+            this.txt_person.ReadOnly = true;
+            this.txt_person.Size = new System.Drawing.Size(146, 238);
+            this.txt_person.TabIndex = 4;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 262);
+            this.ClientSize = new System.Drawing.Size(557, 262);
+            this.Controls.Add(this.txt_person);
             this.Controls.Add(this.txtHistory);
             this.Controls.Add(this.txtMsg);
             this.Controls.Add(this.txtIp);
@@ -92,6 +103,7 @@
         private System.Windows.Forms.TextBox txtIp;
         private System.Windows.Forms.TextBox txtMsg;
         private System.Windows.Forms.TextBox txtHistory;
+        private System.Windows.Forms.TextBox txt_person;
     }
 }
 
